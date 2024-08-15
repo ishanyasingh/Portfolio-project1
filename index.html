@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Dr. Jeyanthi S.</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects-patents">Projects & Patents</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Dr. Jeyanthi S.</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects-patents" onclick="toggleMenu()">Projects & Patents</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Dr. Jeyanthi profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Dr. Jeyanthi S.</h1>
+            <p class="section__text__p2">Professor of School of Mechanical Engineering</p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick="window.open('./assets/resume-example.pdf')">
+                Download CV
+            </button>
+            <button 
+                class="btn btn-color-1" 
+                onclick="location.href='./#contact'">
+                Contact Info
+            </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" 
+                alt="My LinkedIn profile" 
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/jeyanthi-s-957894a6/'">
+                <img src="./assets/vit-logo.png" 
+                alt="My VIT profile" 
+                class="icon" 
+                onclick="location.href='https://chennai.vit.ac.in/member/dr-jeyanthi-s/'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-container">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience Icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>17+ years <br>Professor of Mechanical Engineering at Vellore Institute of Technology</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                        alt="Education Icon" 
+                        class="icon"/>
+                        <h3>Education</h3>
+                        <p>B.E. (Mechanical Engineering), University of Madras, 1995-1998. <br>M.E. (CAD) Satyabhama University, 2004-2006. <br>Ph.D. (Composites and Impact analysis) Anna University, 2010-2013.</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p><br>I am Dr. Jeyanthi S, a Professor of Mechanical Engineering at VIT, Chennai. My expertise lies in composite materials, crash analysis using LS DYNA, and vibro-acoustic characterization of polymers.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" 
+        class="icon arrow"
+        onclick="location.href='./#experience';"/>
+    </section>
+
+    <section id="projects-patents">
+        <h1 class="title">Projects and Patents</h1>
+        <div class="projects-container">
+            <div class="project-item">
+                <img src="./assets/project-image1.png" alt="Development of Wearable Polymer Sensors" class="project-img">
+                <h3 class="project-title">Development of Wearable Polymer Sensors</h3>
+            </div>
+            <div class="project-item">
+                <img src="./assets/project-image2.png" alt="3D Digitalization of Acoustical Behavior of Musical Pillars" class="project-img">
+                <h3 class="project-title">3D Digitalization of Acoustical Behavior of Musical Pillars</h3>
+            </div>
+            <div class="project-item">
+                <img src="./assets/project-image3.png" alt="Development and Acoustic Testing of Eco-Friendly Materials" class="project-img">
+                <h3 class="project-title">Development and Acoustic Testing of Eco-Friendly Materials</h3>
+            </div>
+        </div>
+        <div class="other-projects">
+            <h2>Other Projects</h2>
+            <p><strong>Rigid foam recycling-Waste to product:</strong> Defense Research and Development Organisation DRDO-Govt of INDIA-PI-Rs 30 lakhs (Ongoing)</p>
+            <p><strong>DST –SERB:</strong> Development and acoustic testing of eco-friendly materials from agricultural waste - PI Rs 15 Lakhs (Completed).</p>
+            <p><strong>Seed fund from VIT:</strong> Development of functionalized conductive Nano filler reinforced sustainable foam for EMI Shielding Applications - Rs 5 Lakhs, PI (Completed).</p>
+        </div>
+        <div class="patents">
+            <h2>Patents</h2>
+            <p><strong>Published patent:</strong> BROADBAND SOUND ABSORBER - A NOISE CONTROL DEVICE USING INTEGRATED PASSIVE ELEMENTS “202041035046 A”.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contant Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="container-info-container">
+                <img
+                src="./assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon"
+                />
+                <p><a href="mailto:Jeygan@gmail.com">Jeygan@gmail.com</a></p>
+            </div>
+            <div class="contact-info-upper-container">
+                <div class="container-info-container">
+                    <img
+                    src="/assets/call.png"
+                    alt="Call icon"
+                    class="icon contact-icon"
+                    />
+                    <p><a href="tel:+91 9840477440">+91 9840477440</a></p>
+                </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container"> 
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects-patents">Projects & Patents</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Dr. Jeyanthi S. All Right Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
